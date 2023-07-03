@@ -26,4 +26,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push 1muddassir/jawa_springboot_app:tagname
+        run: docker push 1muddassir/jawa_springboot_app:latest
