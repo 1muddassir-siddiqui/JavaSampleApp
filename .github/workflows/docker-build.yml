@@ -17,7 +17,7 @@ jobs:
         run: docker build -t my-image .
         
       - name: Tag Docker image
-        run: docker tag my-image:latest username/repository:latest
+        run: docker tag my-image:latest 1muddassir/jawa_springboot_app
 
       - name: Login to Docker Hub
         uses: docker/login-action@v1
@@ -26,4 +26,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push 1muddassir/jawa_springboot_app:latest
+        run: docker push 1muddassir/jawa_springboot_app
